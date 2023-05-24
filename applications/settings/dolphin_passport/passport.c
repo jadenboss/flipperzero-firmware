@@ -37,7 +37,7 @@ static void input_callback(InputEvent* input, void* ctx) {
 static void render_callback(Canvas* canvas, void* ctx) {
     DolphinStats* stats = ctx;
 
-    char level_str[32];
+    char level_str[20];
     char mood_str[32];
     uint8_t mood = 0;
 
@@ -77,7 +77,7 @@ static void render_callback(Canvas* canvas, void* ctx) {
     canvas_draw_line(canvas, 58, 44, 123, 44);
 
     const char* my_name = furi_hal_version_get_name_ptr();
-    snprintf(level_str, 32, "\( %s", "╯°□°）╯︵ ┻━┻");
+    snprintf(level_str, 20, "test %hu", "...");
     canvas_draw_str(canvas, 58, 12, my_name ? my_name : "Unknown");
     canvas_draw_str(canvas, 58, 26, mood_str);
     canvas_draw_str(canvas, 58, 40, level_str);
