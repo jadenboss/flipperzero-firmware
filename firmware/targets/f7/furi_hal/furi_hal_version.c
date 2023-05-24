@@ -275,7 +275,7 @@ const char* furi_hal_version_get_device_name_ptr() {
 }
 
 const char* furi_hal_version_get_ble_local_device_name_ptr() {
-    return "✵Skynet Mole✵";
+    return "Skynet Mole";
 }
 
 const uint8_t* furi_hal_version_get_ble_mac() {
