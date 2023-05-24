@@ -37,7 +37,7 @@ static void input_callback(InputEvent* input, void* ctx) {
 static void render_callback(Canvas* canvas, void* ctx) {
     DolphinStats* stats = ctx;
 
-    char level_str[20];
+    char level_str[32];
     char mood_str[32];
     uint8_t mood = 0;
 
